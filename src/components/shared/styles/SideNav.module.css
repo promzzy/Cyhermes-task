@@ -1,0 +1,41 @@
+.sideNav {
+    background-color: var(--color-black);
+    /* color: var(--color-white); */
+    height: 90vh;
+    box-shadow: 4px 0px 16px rgba(16, 30, 115, 0.08);
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .navMenu{
+    align-self: center;
+    /* text-align: center; */
+  }
+  .menuList {
+    list-style: none;
+    padding: 0;
+  }
+  .menuItem {
+    text-transform: capitalize;
+    padding: 14px 0;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0.1px;
+    color: var( --color-neutral-gray-light);
+  }
+  .navText{
+    align-self: flex-end;
+    padding: 30px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    box-shadow: 5px 5px 2px 2px gray;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.1px;
+    color: var(--color-neutral-gray-light);
+  }
