@@ -1,5 +1,147 @@
+.dashboard{
+
+padding: 15px;}
+.profileName{
+    color: var(--color-neutral-gray);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 13px;
+}
+.startTrial{
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+.trialPeriod{
+    color: orange;
+    font-style: italic;
+}
+.selectPackage{
+    color: var(--color-neutral-gray);
+    font-size: 12px;
+}
+.currency{
+    color: var(--color-primary);
+    font-size: 13px;
+}
+.price{
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--color-primary);
+}
+.total{
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--color-neutral-gray);
+    }
+    .exclude{
+        color: var(--color-neutral-gray);
+        font-size: 10px;
+    }
 .dashboardTop{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-direction: row;
+}
+.prizeTotal{
+    display: flex;
+    flex-direction: column;
+}
+
+.packageDetails{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* padding: 50px; */
+}
+.priceDetails{
+    width: 200px;
+    height: 200px;
+    margin-right: 45px;
+    padding: 30px;
+    align-self: flex-end;
+    background-color: var(--color-white);
+    box-shadow: 5px 5px 10px 10px whitesmoke;
+}
+.basicDetails{
+    border: 1px solid rgb(8, 8, 230);
+    border-radius: 15px;
+    width: 200px;
+    margin-left: 45px;
+    padding: 40px;
+    background: var(--color-skyblue);
+}
+.basicDetails h3{
+    color: var(--color-primary);
+}
+.basicTrialDays{
+    color: var(--color-neutral-gray);
+    font-weight: bold;
+    font-size: 13px;
+}
+.premiumFeature{
+    color: var(--color-neutral-gray);
+    font-size: 11px;
+}
+.basicDetails div p span{
+    text-transform: uppercase;
+    color: var(--color-neutral-gray);
+    font-size: 14px;
+    font-weight: bold;
+}
+.basicDetails div p ul li{
+    color: var(--color-neutral-gray);
+    font-size: 12px;
+    list-style: none;
+    text-transform: capitalize;
+}
+.mainPrice{
+    display: flex;
+    flex-direction: column;
+}
+.startsFrom{
+    color: orange;
+    font-size: 12px;
+}
+.mainPriceLight{
+    color: var(--color-neutral-gray);
+    font-size: 11px;
+}
+.mainPriceBold{
+    font-size: 18px;
+    margin: 5px 0;
+    font-weight: bold;
+}
+.priceDetails p{
+    display: flex;
+    flex-direction: column;
+}
+.progresSection{
+    color: var(--color-neutral-gray);
+}
+.progresSection span{
+    font-size: 12px;
+    margin-top: -10px;
+}
+
+
+
+
+.gridBody{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    justify-content: center;
+    color: var(--color-neutral-gray);
+}
+.productsCard{
+    background-color: rgba(119, 102, 94, 0.863);
+    text-align: center;
+    height: 300px;
+    border-radius: 17px;
+    padding: 15px;
+    border: rgba(19, 18, 18, 0.473) 3px solid;
+
 }
