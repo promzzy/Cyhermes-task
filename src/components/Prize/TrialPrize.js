@@ -3,7 +3,7 @@ import styles from './styles/TrialPrize.module.css'
 import {Modules} from '../../data/modules'
 import {ProgressBar} from './ProgressBar'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAssistiveListeningSystems, faArchway} from '@fortawesome/free-solid-svg-icons'
+import { faArchway} from '@fortawesome/free-solid-svg-icons'
 
 const Profile = {
     name: "terry",
