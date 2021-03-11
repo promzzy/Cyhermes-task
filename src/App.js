@@ -1,11 +1,25 @@
 import React from 'react'
 import PageLayout from './components/layout/PageLayout'
 import HomePage from './pages/index'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+
 function App() {
   return (
   <div>
     <PageLayout>
-        <HomePage />
+      <Router>
+        <Switch>
+          <Route path="/">
+           <HomePage />
+         </Route>
+
+        </Switch>
+        </Router>
     </PageLayout>
   </div>
   );

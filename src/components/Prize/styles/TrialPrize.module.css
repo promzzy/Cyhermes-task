@@ -1,6 +1,42 @@
 .dashboard{
-
-padding: 15px;}
+padding: 15px 150px;
+}
+@media (max-width: 780px){
+    .dashboard{
+        padding: 10px 50px;
+        } 
+    .profileName{
+        font-size: 9px !important;
+    }
+    .startTrial{
+        font-size: 12px !important;
+    }
+    .currency{
+        font-size: 8px !important;
+    }
+    .price{
+        font-size: 15px !important;
+    }
+    .selectPackage{
+        font-size: 8px !important;
+    }
+    .packageDetails{
+        
+        flex-direction: column !important;
+        justify-content: space-between;
+    }
+    /* .priceDetails, .basicDetails{
+        height: 100px !important;
+        width: 100px !important;
+    } */
+    .priceDetails, .basicDetails{
+        margin: 10px 0 !important;
+    }
+    .moduleIcon{
+        display: none;
+    }
+  
+}
 .profileName{
     color: var(--color-neutral-gray);
     text-transform: uppercase;
@@ -40,7 +76,7 @@ padding: 15px;}
     }
 .dashboardTop{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-direction: row;
 }
 .prizeTotal{
@@ -64,9 +100,10 @@ padding: 15px;}
     box-shadow: 5px 5px 10px 10px whitesmoke;
 }
 .basicDetails{
-    border: 1px solid rgb(8, 8, 230);
+    border: 1px solid rgba(30, 30, 199, 0.699);
     border-radius: 15px;
     width: 200px;
+    /* height: 250px; */
     margin-left: 45px;
     padding: 40px;
     background: var(--color-skyblue);
@@ -123,6 +160,9 @@ padding: 15px;}
     font-size: 12px;
     margin-top: -10px;
 }
+.prgresBar{
+    margin: 30px 0;
+}
 
 
 
@@ -130,7 +170,7 @@ padding: 15px;}
 .gridBody{
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     grid-column-gap: 30px;
     grid-row-gap: 30px;
     justify-content: center;
@@ -143,5 +183,53 @@ padding: 15px;}
     border-radius: 17px;
     padding: 15px;
     border: rgba(19, 18, 18, 0.473) 3px solid;
+
+}
+.moduleItems{
+    display: flex;
+    justify-content: space-between;
+}
+.moduleIcon{
+    margin-right: 15px;
+    align-self: flex-end;
+    font-size: 25px;
+}
+
+.borderLine{
+    border-bottom: 2px dashed #336cfb8a;
+    padding-top: 20px;
+}
+
+
+.button{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+.backBtn{
+    background: none;
+    color: rgba(182, 13, 13, 0.576);
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    text-transform: capitalize;
+}
+.backBtn:hover{
+    color: rgb(182, 13, 13);
+}
+.continueBtn{
+    background: rgba(220, 220, 6, 0.857);
+    font-size: 15px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.604);
+    border-radius: 15px;
+    border: none;
+    height: 50px;
+    width: 100px;
+}
+.continueBtn:hover{
+    background: rgb(189, 189, 6);
+    color: rgba(0, 0, 0, 0.898);
+
 
 }

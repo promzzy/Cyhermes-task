@@ -1,23 +1,33 @@
 import React, { useState, useEffect} from 'react'
 import styles from './styles/TrialPrize.module.css'
-// import {Progress} from 'antd'
 import {Modules} from '../../data/modules'
+import {ProgressBar} from './ProgressBar'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faAssistiveListeningSystems, faArchway} from '@fortawesome/free-solid-svg-icons'
+
+const Profile = {
+    name: "terry",
+    email: ""
+}
+
 
 export default function TrialPrize(){
 
     const [modules, setModules] =  useState([])
+    const [personProfile, setPersonProfile] = useState({})
 
     useEffect(()=>{
         setModules(Modules)
+        setPersonProfile(Profile)
     },[])
 
-
+console.log(personProfile)
     return(
         <div className={styles.dashboard}>
             <div className={styles.dashboardTop}>
                 <div>
                     <span className={styles.profileName}>
-                        Hey, Terry
+                        Hey, {personProfile.name}
                     </span>
                     <div className={styles.startTrial}>
                         <span>Start your</span>
@@ -92,8 +102,8 @@ export default function TrialPrize(){
             <div className={styles.progresSection}>
                 <h4>Add more users</h4>
                 <span>NGN99,999 per user</span>
-<p>
-{/* <Progress percent={30} /> */}
+<p className={styles.prgresBar}>
+                <ProgressBar />
 </p>
             </div>
 
@@ -102,10 +112,8 @@ export default function TrialPrize(){
 
                 {
                     modules.map((module)=>(
-                        <div>
-                            <span>
-                                {module.icon}
-                            </span>
+                        <div className={styles.moduleItems}>
+                            <FontAwesomeIcon className={styles.moduleIcon} icon={faArchway} />
                             <span>
                                 {module.moduleName}
                             </span>
@@ -114,7 +122,13 @@ export default function TrialPrize(){
                 }   
 
             </div>
-            
+            <p className={styles.borderLine}>
+                
+            </p>
+            <div className={styles.button}>
+                <button className={styles.backBtn}>Go Back</button>
+                <button className={styles.continueBtn}>Contiune</button>
+            </div>
         </div>
     )
 }

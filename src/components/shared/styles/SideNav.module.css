@@ -1,21 +1,32 @@
+.logo{
+  color: var(--color-white);
+  align-self: center;
+  padding-top: 20px;
+}
+
 .sideNav {
     background-color: var(--color-black);
     /* color: var(--color-white); */
-    height: 90vh;
+    min-height: 100vh;
     box-shadow: 4px 0px 16px rgba(16, 30, 115, 0.08);
     padding: 24px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    /* justify-content: space-between; */
   }
   .navMenu{
     align-self: center;
+    margin: 50px 0;
+
     /* text-align: center; */
   }
   .menuList {
     list-style: none;
     padding: 0;
   }
+.link{
+  text-decoration: none;
+}
   .menuItem {
     text-transform: capitalize;
     padding: 14px 0;
@@ -30,6 +41,7 @@
   .navText{
     align-self: flex-end;
     padding: 30px;
+    margin-top: 70px;
     font-family: Lato;
     font-style: normal;
     font-weight: bold;
@@ -38,4 +50,12 @@
     line-height: 20px;
     letter-spacing: 0.1px;
     color: var(--color-neutral-gray-light);
+  }
+  @media (max-width: 780px){
+    .navText{
+      display: none;
+    }
+    .menuItem{
+      font-size: 8px;
+    }
   }

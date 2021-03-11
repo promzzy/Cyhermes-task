@@ -3,41 +3,41 @@
 export const Modules = [
     {
         moduleName: "Governance Portal",
-        icon: "",
+        icon: "faArchway",
         id: "1"
     },
     {
-        moduleName: "Governance Portal",
-        icon: "",
+        moduleName: "Investor Relations",
+        icon: "faAssistiveListeningSystems",
         id: "2"
     },
     {
-        moduleName: "Governance Portal",
+        moduleName: "Corporate Universe",
         icon: "",
         id: "3"
     },
     {
-        moduleName: "Governance Portal",
+        moduleName: "Contract Domain",
         icon: "",
         id: "4"
     },
     {
-        moduleName: "Governance Portal",
+        moduleName: "Dispute Portfolio",
         icon: "",
         id: "5"
     },
     {
-        moduleName: "Governance Portal",
+        moduleName: "Minutes Book",
         icon: "",
         id: "6"
     },
     {
-        moduleName: "Governance Portal",
+        moduleName: "Attendant Register",
         icon: "",
         id: "7"
     },
     {
-        moduleName: "Governance Portal",
+        moduleName: "Reporting Tool",
         icon: "",
         id: "8"
     }
